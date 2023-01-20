@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap&effect=fire');
+
+/* || General settings  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: #f0ead2;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    padding: 2px 1em 4px;
+    background-color: #060704;
+    box-shadow: 0 0 20px 0 #060704;
+    font-family: Copperplate, cursive;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: 8rem;
+    }
+    h1 {text-align: center;}
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f0ead2;
+    text-shadow: -2px 2px 5px #ff7d00;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+    color: #f0ead2;
+    padding: 10px 20px;
+    margin: 0.5em;
+    border: 1px solid #f0ead2;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a.active {
+    background-color: #f0ead2;
+    color: black;
+    box-shadow: 0 0 10px 0 #ff7d00;
+}
+
+nav a:hover:not(.active) {
+    background-color: #f0ead2;
+    color: black;
+    box-shadow: 0 0 10px 0 #ff7d00;
+    margin-top: 0.6em;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+h2, h3 {
+    font-family: Copperplate, cursive;
+    text-align: center;
+}
+
+footer {
+    margin-bottom: -20px;
+    padding: 1em;
+    background-color: rgba(6, 7, 4, 0.2);
+    background-image: linear-gradient(to top right, rgba(6, 7, 4, 1), rgba(6, 7, 4, 0.2));
+    color: #f0ead2;
+    font-family: Copperplate, cursive;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-contact {
+    width: 50%;
+    padding: 0 2em;
+}
+
+.foot-contact-first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, textarea {
+    background-color: #f0ead2;
+    width: 100%;
+    display: inline-block;
+    padding: 2px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input {width: 49%;}
+
+button {
+    background-color: #f0ead2;
+    color: black;
+    width: 100%;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(6, 7, 4, 0.2);
+    color: #f0ead2;
+    box-shadow: 0 0 10px 0 #f0ead2;
+}
+
+.foot-nav {
+    padding: 2em 4em;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: #060704;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: underline;
+}
+
+/* || HOME page settings */
+.home-container {
+    margin: 1em auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    max-width: min(500px, 100%);
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #home-box-three, #home-box-five, #home-box-six {
+      order: 1;
+    }
+}
+
+h3 a, h3 a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h3 a:hover, h3 a:active {
+    text-decoration: underline;
+}
+
+.link-btm:link, .link-btm:visited {
+    color: black;
+    padding: 10px 20px;
+    margin: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #060704;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-btm:hover, .link-btm:active {
+    background-color: #f0ead2;
+    box-shadow: 0 0 10px 0 #ff7d00;
+}
+
+.home-img {
+    max-width: 120%;
+    margin-left: -3rem;
+    border-radius: 10px;
+    transform: rotate(-0.4deg);
+}
+
+#second-img {
+    transform: rotate(0.6deg);
+}
+
+
+/* || CATS page settings */
+
+.cats-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    scroll-margin-top: 6rem;
+    width: min(100%, 350px);
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #060704;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin-top: 1rem;
+}
+
+.card p {
+    margin-top: 0;
+    padding: 1rem;
+}
+
+
+/* || MUSIC page settings */
+.music-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.song {
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px 0 #060704;
+}
+
+
+/* || PLACES page settings */
