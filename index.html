@@ -22,7 +22,7 @@
 
         <nav>
             <ul>
-                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a class="actived" href="index.html">HOME</a></li>
                 <li><a href="cats.html">CATS</a></li>
                 <li><a href="music.html">MUSIC</a></li>
                 <li><a href="places.html">PLACES</a></li>
@@ -50,7 +50,7 @@
                 <a class="link-btm" href="cats.html">Go to CATS</a>
             </div>
             <div class="box" id="home-box-two">
-                <img class="home-img" src="img/cats/cats1.png" alt="three sleepy cats"
+                <img class="home-img" src="./img/cats/cats1.png" alt="three sleepy cats"
                     title="These are Laska, Knopka and Tomko">
             </div>
         </section>
@@ -82,14 +82,21 @@
     <footer>
         <div class="foot-contact">
             <h3>Contact</h3>
-            <form action="#">
+            <form action="#" onsubmit="confirmation()">
                 <div class="foot-contact-first-row">
                     <input type="text" id="name" name="name" required placeholder="Name">
                     <input type="email" id="email" name="email" required placeholder="Email">
                 </div>
                 <textarea id="questions" name="questions" rows="2" placeholder="Your question(s)"></textarea>
-                <button type="submit">SEND</button>
+                <button type="submit" id="send">SEND</button>
             </form>
+            <script>
+                function confirmation() {
+                    let name = document.querySelector("#name").value;
+                    alert(`Thanks, ${name}!
+Your form was confirmed!`);
+                }
+            </script>
         </div>
 
         <div class="foot-nav">

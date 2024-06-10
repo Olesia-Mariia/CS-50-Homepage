@@ -23,33 +23,134 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="cats.html">CATS</a></li>
                 <li><a href="music.html">MUSIC</a></li>
-                <li><a class="active" href="places.html">PLACES</a></li>
+                <li><a class="actived" href="places.html">PLACES</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <p>There will be places photo gallery soon :)</p>
+      <div class="container-fluid mb-2 mt-4">
+        <h2>Lviv</h2>
+        <p class="text-center">It's the city where I live and which I like the most</p>
+      </div>
+      <div class="container-fluid mb-3">
+        <div class="row justify-content-center">
+          <div class="col col-md-12 col-lg-9">
+            <div id="lviv" class="carousel carousel-dark slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#lviv" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#lviv" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#lviv" data-bs-slide-to="2"></button>
+              </div>
 
-        <ul>
-            <!-- TODO: Make them anchors to another page-->
-            <li><a href="/places.html/#lviv">Lviv</a> (It's the city where I live and which I like the most)</li>
-            <li><a href="/places.html/#mountains">Mountains</a> (It's about freedom, more deep breath, ordering
-                thoughts, beautiful views...)</li>
-            <li>Bonfires (However it is more about people than places)</li>
-            <li>...</li>
-        </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/lviv-opera-theater.jpg" alt="Lviv Opera Theater" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/lviv-view.jpg" alt="View" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/lviv-rynok-square.jpg" alt="Lviv Rynok Square" class="d-block w-100">
+                </div>
+              </div>
 
-        <section id="lviv">
-            <h2>Lviv</h2>
-            <p>Here will be information about Lviv and some photos too.</p>
-        </section>
+              <button class="carousel-control-prev" type="button" data-bs-target="#lviv" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#lviv" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <br>
+      <div class="container-fluid mb-2">
+        <h2>Mountains</h2>
+        <p class="text-center">It's about freedom, more deep breath, ordering thoughts, beautiful views...</p>
+      </div>
 
-        <section id="mountains">
-            <h2>Mountains</h2>
-            <p>Here will be photos</p>
-        </section>
+      <div class="container-fluid mb-3">
+        <div class="row justify-content-center">
+          <div class="col col-md-12 col-lg-9">
+            <div id="mountains" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mountains" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mountains" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mountains" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#mountains" data-bs-slide-to="3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/summer.jpg" alt="Summer in the mountains" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/winter.jpg" alt="Winter in the mountains" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/dawn.jpg" alt="Dawn in the mountains" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/wolf-rock.jpg" alt="Rock that look like a wolf" class="d-block w-100">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#mountains" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#mountains" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mb-2">
+        <h2>Bonfires</h2>
+        <p class="text-center">However it is more about people around me than fire</p>
+      </div>
+
+      <div class="container-fluid mb-3">
+        <div class="row justify-content-center">
+          <div class="col col-md-12 col-lg-9">
+            <div id="bonfires" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bonfires" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#bonfires" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#bonfires" data-bs-slide-to="2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/bonfire.jpg" alt="Bonfire" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/bonfire-fake.jpg" alt="Fake bonfire in the room" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/bonfire-online.jpg" alt="Online bonfire" class="d-block w-100">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#bonfires" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#bonfires" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>

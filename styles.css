@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap&effect=fire');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto&display=swap');
 
 /* || General settings  */
 * {
@@ -7,11 +7,20 @@
     box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
 
 body {
     background-color: #f0ead2;
     font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 img {
@@ -26,20 +35,12 @@ header {
     padding: 2px 1em 4px;
     background-color: #060704;
     box-shadow: 0 0 20px 0 #060704;
-    font-family: Copperplate, cursive;
+    font-family: 'Caveat', cursive;
     display: flex;
     position: fixed;
     top: 0;
     justify-content: space-between;
-    z-index: 1;
-}
-
-@media screen and (max-width: 992px) {
-    header {
-        flex-direction: column;
-        height: 8rem;
-    }
-    h1 {text-align: center;}
+    z-index: 3;
 }
 
 h1 {
@@ -66,13 +67,13 @@ nav a:link, nav a:visited {
     display: inline-block;
 }
 
-nav a.active {
+nav a.actived {
     background-color: #f0ead2;
     color: black;
     box-shadow: 0 0 10px 0 #ff7d00;
 }
 
-nav a:hover:not(.active) {
+nav a:hover:not(.actived) {
     background-color: #f0ead2;
     color: black;
     box-shadow: 0 0 10px 0 #ff7d00;
@@ -84,23 +85,23 @@ main {
 }
 
 h2, h3 {
-    font-family: Copperplate, cursive;
+    font-family: 'Caveat', cursive;
     text-align: center;
 }
 
 footer {
-    margin-bottom: -20px;
     padding: 1em;
+    min-width: 100vw;
     background-color: rgba(6, 7, 4, 0.2);
     background-image: linear-gradient(to top right, rgba(6, 7, 4, 1), rgba(6, 7, 4, 0.2));
     color: #f0ead2;
-    font-family: Copperplate, cursive;
     display: flex;
     justify-content: space-around;
 }
 
 .foot-contact {
     width: 50%;
+    max-width: 600px;
     padding: 0 2em;
 }
 
@@ -153,6 +154,17 @@ footer a:active {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: 8rem;
+    }
+    h1 {text-align: center;}
+    main {
+        padding-top: 8rem;
+    }
+}
+
 /* || HOME page settings */
 .home-container {
     margin: 1em auto;
@@ -168,7 +180,7 @@ footer a:active {
     padding: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     #home-box-three, #home-box-five, #home-box-six {
       order: 1;
     }
@@ -225,7 +237,7 @@ h3 a:hover, h3 a:active {
     margin: auto;
 }
 
-.card {
+.cat-card {
     scroll-margin-top: 6rem;
     width: min(100%, 350px);
     background-color: inherit;
@@ -235,37 +247,29 @@ h3 a:hover, h3 a:active {
     flex-direction: column;
 }
 
-.card img {
+.cat-card img {
     border-radius: 10px 10px 0 0;
 }
 
-.card h3 {
+.cat-card h3 {
     margin-top: 1rem;
 }
 
-.card p {
+.cat-card p {
     margin-top: 0;
     padding: 1rem;
 }
 
 
 /* || MUSIC page settings */
-.music-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    width: 95%;
-    margin: auto;
-}
-
 .song {
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 0 10px 0 #060704;
 }
 
+.song:hover {
+    box-shadow: 0 0 20px 0 #ff7d00;
+}
 
 /* || PLACES page settings */
