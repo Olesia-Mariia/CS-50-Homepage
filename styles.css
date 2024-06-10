@@ -262,7 +262,7 @@ h3 a:hover, h3 a:active {
 
 
 /* || MUSIC page settings */
-.song {
+/* .song {
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 0 10px 0 #060704;
@@ -270,6 +270,14 @@ h3 a:hover, h3 a:active {
 
 .song:hover {
     box-shadow: 0 0 20px 0 #ff7d00;
+} */
+
+iframe {
+  box-shadow: 0 0 10px 0 #060704;
+}
+
+iframe:hover {
+    box-shadow: 0 0 20px 0 #060704;
 }
 
 /* || PLACES page settings */
